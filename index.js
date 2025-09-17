@@ -19,29 +19,36 @@ console.log(playlist);
 // ----------------------------------
 // OBJECTS SECTION
 // Task 5: Create an object called 'song' with 'title', 'artist', and 'duration' properties
-
+let song = {
+    title: "No introduction",
+    artist: "Central Cee"
+};
 
 // Task 6: Add a property 'listenedTo' to the 'song' object and set it to false
-
+song.listentedTo = false;
 
 // Task 7: Delete the 'artist' property
-
+delete song.artist;
 
 // Commit your changes with an appropriate message.
 // ----------------------------------
 // NESTED ARRAYS & OBJECTS SECTION
 // Task 8: Create an object called 'album' with properties song's album's 'name', 'year', and 'songs' (leave 'songs' as empty array for now)
-
+let album = {
+    name:"Can't Rush Greatness",
+    year:"2025",
+    songs: []
+};
 
 // Task 9: Add your song object (task 5) to the empty songs array in the album object
-
+album.songs.push(song);
 
 // Console log the length of the album's songs array to confirm it worked
-
+console.log(album.songs.length);
 // Task 10: Update the title of the song to be all lowercase. 
 // Console log the album object to check your change
-
-
+album.songs[0].title = album.songs[0].title.toLowerCase();
+console.log(album);
 // Commit your changes with an appropriate message.
 // ----------------------------------
 // EXTRA CREDIT
